@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; 
+}
+
+/*------------nav------------*/
+.menu{
+    display: none;
+    float: right;
+    margin: 20px 30px 0px 0px;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #1E1E1E;
+}
+
+.logo{
+    height:100px ;
+    width: 140px;
+}
+
+.active {
+    color: #C2A859;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-top: 35px;
+}
+
+li{
+    padding-right: 30px;
+    font-size:x-large;
+    margin-right: 20px;
+}
+
+/*------------form------------*/
+
+body{
+    background-color: #1E1E1E;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1E1E1E;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize:horizontal; 
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1E1E1E;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize:horizontal;
+}
+  
+input[type=button] {
+    background-color: #1E1E1E;
+    color: #C2A859;
+    padding: 12px 21px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  
+  
+}
+  
+#formulaire {
+    border-radius: 8px;
+    background-color: #C2A859;
+    padding: 100px;
+    margin:100px;
+    font-size: 20px;
+}
+
+.btn{
+    text-align: center;
+}
+  
+#Message{
+    height: 200px;
+}
+
+span{
+    font-size: 18px;
+    color:red;
+    margin-top: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1200px){
+      .menu{
+        display: block;
+      }
+      .header{
+        background-color: #1E1E1E;
+    }
+    
+    .logo{
+        height:100px ;
+        width: 140px;
+    }
+    
+    .active {
+        color: #C2A859;
+    }
+    
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    ul{
+        display: none;
+    }
+
+    #formulaire {
+        padding: 20px;
+        margin:20px; 
+      }
+    
+      .tform{
+    
+        text-align: center;
+        margin-top: 10px;
+        color: #3081BF;
+        font-size: 20px;
+        height: 15px;
+      }
+  }

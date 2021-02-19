@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <script>
+		function nav(){
+			var nav = document.getElementById("navcontenu");
+			if(nav.getAttribute("vue")=="active")
+			{
+				document.getElementById("navcontenu").classList.remove("menu");
+				nav.setAttribute("vue","");
+			}else
+			{
+				nav.setAttribute("vue","active");
+				document.getElementById("navcontenu").classList.add("menu");
+
+			}
+		}
+	</script>
+    <!--nav-->
+    <header>
+		<div class="header">
+			<img class="logo" src="1.jpg" alt="luxury cars renting logo">
+            <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+				<rect width="100" height="20"></rect>
+				<rect y="30" width="100" height="20"></rect>
+				<rect y="60" width="100" height="20"></rect>
+			</svg>
+			<ul id="navcontenu" class=" " vue="">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a class="active" href="booking.html">Booking</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <h1>Type de véhicule</h1>
+
+    <div class="type">
+        <img class="slide" id="moto" src="ee.jpg" alt="motorcycle" onclick="choix(this.id)">
+        <img class="slide" id="compact" src="compacte.jpg" alt="compact-car" onclick="choix(this.id)">
+        <img class="slide" id="citadine" src="citadine.jpg" alt="citadine-car" onclick="choix(this.id)">
+        <img class="slide" id="utilitaire" src="utilitaire.jpg" alt="utilitaire-car" onclick="choix(this.id)">
+        <img class="slide" id="berlin" src="berlin.jpg" alt="berlin-car" onclick="choix(this.id)">
+        <img class="slide" id="truck" src="truck.jpg" alt="truck" onclick="choix(this.id)">
+        <img class="slide" id="cm" src="cm.jpg" alt="construction-machine" onclick="choix(this.id)">
+    </div>
+
+    <!------------------------feul------------------------>
+
+    <h1>Select your fuel type</h1>
+    <form class="feul">
+        <div class="carburant" >
+            <input type="radio" id="essence" name="radio" value="essence">
+            <label for="essence">Essence</label>
+        </div>
+        <div class="carburant" >
+            <input type="radio" id="diesel" name="radio" value="diesel">
+            <label for="diesel">Diesel</label>
+        </div>
+        <div class="carburant" >
+            <input type="radio" id="electrique" name="radio" value="electrique">
+            <label for="electrique">Electrique</label>
+        </div>
+        <div class="carburant" >
+            <input type="radio" id="hybride" name="radio" value="hybride">
+            <label for="hybride">Hybride</label>
+        </div>
+    </form>
+
+    <!-----------------------gear box----------------------->
+
+    <h1>Select your gear box type</h1>
+    <form class="gear-box">
+        <div class="gear" id="manual1">
+            <input type="radio" id="manual" name="gear" value="manual">
+            <label for="manual">Manual</label>
+        </div>
+        <div class="gear" id="automatic1">
+            <input type="radio" id="automatic" name="gear" value="automatic">
+            <label for="automatic">Automatic</label>
+        </div>
+    </form>
+
+    <!-----------------------Reservation duration----------------------->
+
+    <h1>Reservation duration</h1>
+    <form class="duration">
+        <label for="date">Duration :</label>
+        <input type="number" id="date" name="date">
+      </form>
+ 
+</body>
+
+<!--footer-->
+
+<footer>
+	<div class="phone footer">
+		<img src="phone-square-alt-solid.png">
+		<h3>+2127********</h3>
+	</div>
+	<div class="email footer">
+		<img src="envelope-solid.png">
+		<h3>renting-luxury@gmail.com</h3>
+	</div>
+	<div class="facebook footer">
+		<img src="facebook-square-brands.png">
+		<h3>renting luxury </h3>
+	</div>
+	<div class="instagram footer">
+		<img src="instagram-square-brands.png">
+		<h3>renting_luxury </h3>
+	</div>
+</footer>
+<script src="booking.js"></script>
+</html>

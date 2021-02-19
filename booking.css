@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; 
+}
+
+/*------------nav------------*/
+.menu{
+    display:none;
+    float: right;
+    margin: 20px 30px 0px 0px;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #1E1E1E;
+}
+
+.logo{
+    height:100px ;
+    width: 140px;
+}
+
+.active {
+    color: #C2A859;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-top: 35px;
+}
+
+li{
+    padding-right: 30px;
+    font-size:x-large;
+    margin-right: 20px;
+}
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------slide------------*/
+
+h1{
+    text-align: center;
+    color: #C2A859;
+    margin-top: 50px;
+}
+
+.type img{
+    height: 230px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+p{
+    color: #C2A859;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+}
+    
+.type{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    height: 350px;
+}
+
+.slide{
+    display: inline-block;
+}
+
+.slide:hover{
+    height: 280px;
+    border: 5px solid #C2A859;
+}
+
+.type::-webkit-scrollbar {
+    display:none;
+}
+
+/*------------inputs------------*/
+
+    /*------feul------*/
+    .feul{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carburant{
+        margin-right: 5%;
+    }
+
+    .carburant:last-child{
+        margin-right: 0;
+    }
+    
+
+    /*------gear box------*/
+    
+    .gear-box{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gear{
+        margin-right: 5%;
+    }
+
+    .gear:last-child{
+        margin-right: 0;
+    }
+
+    /*------duration------*/
+    
+    .duration{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+/*------------footer------------*/
+
+footer{
+    background-color: #1E1E1E;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer{
+    padding-left: 50px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer h3{
+    padding-top: 5px;
+    padding-left: 10px;
+    color:#C2A859;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    /*------------nav------------*/
+.menu{
+    display: block;
+}
+
+.header{
+    background-color: #1E1E1E;
+}
+
+.logo{
+    height:100px ;
+    width: 140px;
+}
+
+.active {
+    color: #C2A859;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    display: none;
+}
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------slide------------*/
+
+h1{
+    text-align: center;
+    color: #C2A859;
+    margin-top: 50px;
+}
+
+.type img{
+    height: 230px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+p{
+    color: #C2A859;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+}
+    
+.type{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    height: 350px;
+}
+
+.slide{
+    display: inline-block;
+}
+
+.slide:hover{
+    height: 280px;
+    border: 5px solid #C2A859;
+}
+
+.type::-webkit-scrollbar {
+    display:none;
+}
+
+/*------------inputs------------*/
+
+    /*------feul------*/
+    .feul{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carburant{
+        position: relative;
+        left: 0.5em;
+    } 
+
+    /*------gear box------*/
+    
+    .gear-box{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+
+    /*------duration------*/
+    
+    .duration{
+        color:#C2A859 ;
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+/* ------------footer------------ */
+footer {
+    display: none;
+}
+
+}
