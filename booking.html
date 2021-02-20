@@ -41,6 +41,7 @@
 		</div>
 	</header>
 
+    <!--------------- contenu ------------->
     <h1>Type de véhicule</h1>
 
     <div class="type">
@@ -52,25 +53,25 @@
         <img class="slide" id="truck" src="truck.jpg" alt="truck" onclick="choix(this.id)">
         <img class="slide" id="cm" src="cm.jpg" alt="construction-machine" onclick="choix(this.id)">
     </div>
-
+    
     <!------------------------feul------------------------>
-
+    
     <h1>Select your fuel type</h1>
     <form class="feul">
         <div class="carburant" >
-            <input type="radio" id="essence" name="radio" value="essence">
+            <input type="radio" id="essence" name="radio" value="0.14" onclick="fuelP(this.value)">
             <label for="essence">Essence</label>
         </div>
         <div class="carburant" >
-            <input type="radio" id="diesel" name="radio" value="diesel">
+            <input type="radio" id="diesel" name="radio" value="0.21" onclick="fuelP(this.value)">
             <label for="diesel">Diesel</label>
         </div>
         <div class="carburant" >
-            <input type="radio" id="electrique" name="radio" value="electrique">
+            <input type="radio" id="electrique" name="radio" value="0.05" onclick="fuelP(this.value)">
             <label for="electrique">Electrique</label>
         </div>
         <div class="carburant" >
-            <input type="radio" id="hybride" name="radio" value="hybride">
+            <input type="radio" id="hybride" name="radio" value="0.09" onclick="fuelP(this.value)">
             <label for="hybride">Hybride</label>
         </div>
     </form>
@@ -92,11 +93,13 @@
     <!-----------------------Reservation duration----------------------->
 
     <h1>Reservation duration</h1>
-    <form class="duration">
+    <div class="duration">
         <label for="date">Duration :</label>
-        <input type="number" id="date" name="date">
-      </form>
- 
+        <input type="number" id="days" name="days">
+    </div>
+    <div class="submit-1">
+        <input type="submit" name="" value="Submit" onclick="calc()" class="submit">
+    </div>
 </body>
 
 <!--footer-->

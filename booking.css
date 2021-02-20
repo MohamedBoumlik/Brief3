@@ -140,6 +140,20 @@ p{
         display: flex;
         justify-content: center;
     }
+
+    .submit-1 {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .submit{
+        background-color: #C2A859;
+        color: #1E1E1E;
+        padding: 12px 21px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
 /*------------footer------------*/
 
 footer{
@@ -288,6 +302,21 @@ p{
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
+    }
+
+    .submit-1 {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .submit{
+        background-color: #C2A859;
+        color: #1E1E1E;
+        padding: 12px 21px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
     }
 /* ------------footer------------ */
 footer {

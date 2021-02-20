@@ -8,6 +8,7 @@ function validation(){
     var Sujet=document.getElementById("sujet");
     var Message=document.getElementById("Message");
     var compteur=0;
+    
     if(Nom.value==""){
         document.getElementById("ErreurNom").innerHTML="Le Nom est Obligatoire !";
          compteur++;
